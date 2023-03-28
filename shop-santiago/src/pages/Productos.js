@@ -26,16 +26,14 @@ export default function Productos() {
                         <h3 id="ptitle">{product.title}</h3>
                         <p id="desc">{product.description}</p>
                         <img src={product.image} alt={product.title} />
-                        <p id="price">Precio: {product.price} €</p>
+                        <p>Precio: {product.price} €</p>
                         <p id="rate">
                             {Array.from({ length: product.rating.rate }, (_, i) => (
                                 <span key={i}>⭐</span>
                             ))}
                         </p>
                         <p id="rates">{product.rating.count} valoraciones</p>
-                        <button id="btn" onClick={() => addCesta(product)}>
-                            Añadir al carrito
-                        </button>
+                        <button id="btn" onClick={() => addCesta(product)}>Añadir al carrito</button>
                         <br /><br />
                     </div>
                 ))}
