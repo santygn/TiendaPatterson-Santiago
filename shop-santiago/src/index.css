@@ -1,0 +1,104 @@
+body{
+  margin: 0;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: rgb(172, 160, 160);
+}
+
+#carrito {
+  margin-right: 20px;
+  width: 60px;
+}
+
+#logo {
+  margin-left: 20px;
+  width: 200px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  background-color: rgb(172, 160, 160);
+  position: fixed;
+}
+
+h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 50px;
+  color: black;
+  text-align: center;
+  text-decoration: underline red;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: auto;
+  text-align: center;
+  margin-top: 7%;
+  margin-bottom: 2%;
+}
+
+.art {
+  border: 2px solid red;
+}
+
+.productos img {
+  display: block;
+  margin: auto;
+  width: auto;
+  height: 300px;
+}
+
+#ptitle {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#desc {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.9em;
+}
+
+#price {
+  font-family: "impact";
+  font-size: 1.2em;
+}
+
+#btn {
+  cursor: pointer;
+}
+
+.cesta-vacia { 
+  margin: 0;
+  font-size: 3.5em;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+#total{
+  font-size: 2.5em;
+  font-family: "impact";
+  text-align: center;
+}
